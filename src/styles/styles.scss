@@ -1,0 +1,117 @@
+$color-primary: #07393C;
+$color-secondary: #F0EDEE;
+$color-tertiary-light: #EDF9FD;
+$color-tertiary-dark: #DAF3FB;
+$color-quarternary: #2C666E;
+$color-text: #0A090C;
+
+$font-primary: 'Lato', sans-serif;
+$font-secondary: 'Poppins', sans-serif;
+
+body {
+	margin: 0;
+	background-color: $color-secondary;
+	font-family: $font-primary;
+	color: $color-text;
+}
+header {
+	background-color: $color-primary;
+	color: white;
+	font-size: 30px;
+	text-transform: uppercase;
+	padding: 20px 50px;
+	h1 {
+		margin: 0;
+		font-weight: 600;
+		font-family: $font-secondary;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.back-button {
+		display: inline-block;
+		vertical-align: middle;
+		color: white;
+		margin-right: 20px;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		border-radius: 50%;
+		border: 3px solid white;
+	}
+}
+.users-container {
+	padding: 50px;
+}
+.users-search {
+	width: 1000px;
+	padding: 10px;
+	font-size: 20px;
+	box-sizing: border-box;
+	border: 0;
+	margin-bottom: 20px;
+}
+.user {
+	&-even {
+		background-color: $color-tertiary-dark;
+	}
+	&-odd {
+		background-color: $color-tertiary-light;
+	}
+	color: $color-text;
+	text-decoration: none;
+	display: block;
+	&-name {
+		width: 300px;
+		display: table-cell;
+		padding: 10px;
+	}
+	&-email {
+		width: 400px;
+		display: table-cell;
+		padding: 10px;
+	}
+	&-location {
+		width: 400px;
+		display: table-cell;
+		padding: 10px;
+	}
+
+}
+.user-card {
+	width: 95%;
+	max-width: 700px;
+	background-color: white;
+	margin: 0 auto;
+	border-radius: 50px 50px 25px 25px;
+	position: relative;
+	top: -50px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+	&-name {
+		border-radius: 25px 25px 0 0;
+		background-color: $color-quarternary;
+		color: white;
+		text-transform: uppercase;
+		padding: 20px 50px;
+		font-family: $font-secondary;
+		margin: 0;
+	}
+	&-image {
+		position: absolute;
+		right: 50px;
+		top: -20px;
+		width: 200px;
+		height: 200px;
+		border: 3px solid white;
+		border-radius: 50%;
+		background-size: cover;
+		background-position: center;
+	}
+	&-details {
+		padding: 50px;
+		font-size: 20px;
+		li {
+			margin-bottom: 10px;
+		}
+	}
+}
